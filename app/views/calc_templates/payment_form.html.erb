@@ -1,1 +1,29 @@
-<h1>payment_form</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Make it responsive to small screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+  </head>
+
+  <body>
+    <form action="/payment/results">
+  <div>
+    <label for="apr">APR</label>
+    <input type="text" name="user_apr" id="apr" placeholder="E.g. 5.42">
+  </div>
+    <div>
+    <label for="num_years">Number of years</label>
+    <input type="text" name="user_years" id="num_years" placeholder="How many years to repay?">
+  </div>
+    <div>
+    <label for="principal">Principal</label>
+    <input type="text" name="user_pv" id="principal" placeholder="How much principal?">
+  </div>
+  <button>Calculate monthly payment</button>
+</form>
+
+  </body>
+</html>
